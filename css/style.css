@@ -1,0 +1,1457 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Montserrat:wght@200;300;400;500;600;700;800;900&family=Poppins:wght@200;400;500;600;700;800;900&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+    outline: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body{
+   
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.7;
+    
+    
+}
+
+
+
+:root{
+    /* =====CSS VARIABLES====== */
+
+    --primary-color: #3b47a3;
+    --brand-color: #52d5d6;
+    --white-color: #ffffff;
+    --color-bg-1: #42A0E4;
+    --color-bg-2: #00C894;
+    --color-black: #000;
+    --btc-cta-color: #06C41C;
+
+
+    --font-size-lg: 2rem;
+    --font-size-md: 1.5rem;
+    --font-size-lg: 1rem;
+
+    --transition: 400ms;
+
+    --container-width-lg: 80%;
+    --container-width-md: 90%;
+    --container-width-sm: 95%;
+
+
+    --transition: all 400ms ease;
+    
+}
+
+.container{
+    width: var(--container-width-lg);
+    margin: 0 auto;
+}
+
+section{
+    padding: 6rem 0;
+}
+
+
+
+section h2{
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+h1,h2,h3,h4,h5{
+    line-height: 1.2;
+}
+
+h1{
+    font-size: 2.4rem;
+}
+
+h2{
+    font-size: 2rem;
+}
+
+h3{
+    font-size: 1.6rem;
+}
+
+h4{
+    font-size: 1.3rem;
+}
+
+a{
+    color: var(--brand-color);
+}
+
+
+
+img{
+    width: 100%;
+    display: block;
+    object-fit: cover;
+}
+.logo{
+    width: 70px;
+}
+.btn{
+    display: inline-block;
+    background-color:var(--primary-color);
+    color: var(--white-color);
+    padding: 1rem 2rem;
+    border: 1px solid transparent;
+    font-weight: 500;
+    transition: var(--transition);
+}
+
+.btn-primary:hover{
+    background: transparent;
+    color: var(--primary-color);
+    border: var(--primary-color) 1px solid;
+    transition: var(--transition);
+
+}
+
+.btn-primary{
+    background:  var(--primary-color);
+    color: var(--color-black);
+    border: none;
+    padding: 0.4rem 2rem;
+    color: var(--white-color);
+    
+}
+
+.read{
+    color: var(--white-color);
+    font-weight: 400;
+    font-size: 0.8rem;
+    background: transparent;
+    cursor: pointer;
+}
+
+.btn-read{
+    background: var(--white-color);
+    color: var(--color-black);
+    padding: 1rem 1.9rem;
+    font-weight: 500;
+}
+
+
+/*=========== Nav-Bar==============*/
+
+nav{
+    background-color: transparent; 
+    width: 100vw;
+    height: 5rem;
+    position: fixed;
+    top: 0;
+    z-index: 11;
+     
+}
+
+/* ===========Change Nav bar style on scroll using javascript============= */
+
+.window-scroll{
+    background: var(--brand-color);
+    box-shadow: 0 1rem 2rem rgba(82, 213, 214, 0.2);
+}
+
+.nav-container{
+   
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+nav button{
+    display: none;
+}
+
+.nav-menu{
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+}
+
+.nav-menu a{
+    font-size: 0.9rem;
+    color: var(--primary-color);
+    transition: var(--transition);
+}
+
+.nav-menu a:hover{
+  color: var(--color-black); 
+ 
+   
+}
+
+header{
+    position: relative;
+    top: 2rem;
+    overflow: hidden;
+    margin-bottom: 5rem;
+    height: 100vh;
+}
+
+.header-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 5rem;
+    height: 100%;
+}
+
+.header-left h1{
+    color: var(--primary-color);
+    
+}
+
+.header-left p{
+    margin: 1rem 0 2.4rem;
+}
+
+/* ========Core Values=============== */
+
+
+.core-values{
+    background: var(--brand-color);
+    position: relative;
+
+}
+
+.core-values h1{
+    line-height: 1;
+    margin-bottom: 1.5rem;
+    color: var(--white-color);
+}
+
+
+
+
+
+.core-right{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+
+
+
+.value-list{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    gap: 1.5rem;
+    margin-top: 3rem;
+}
+
+.value-list i{
+    font-size: 2.5rem;
+    margin-right: 1rem;   
+}
+
+.core{
+    background: var(--white-color);
+    padding: 2rem;
+    border-radius: 0.5rem;
+    
+}
+
+.core h5{
+    font-size: 1.6rem;
+    color: var(--color-black);
+    font-weight: 600;
+    margin-bottom: 1.2rem;
+    margin-top: 1rem;
+}
+
+.core p{
+    font-size: 1.2rem;
+    line-height: 1.7rem;
+    color: var(--primary-color);
+    font-weight: 400;
+}
+
+.core a{
+    display: flex;
+    align-items: center;
+   margin-top: 0.7rem;
+}
+
+.core-icon{
+    background: rgba(82, 213, 214, 0.3);
+    color: var(--primary-color);
+    font-size: 1.9rem;
+    padding: 0.4rem 1rem;
+    border-radius: 50%;
+    
+}
+
+/* ==========About LTC-AFRICA=============== */
+
+
+
+.about-head{
+   text-align: center;
+}
+
+.about-head h6{
+    color: var(--brand-color);
+    font-size: 1.2rem;
+}
+
+.about-head h1{
+    color: var(--primary-color);
+    
+}
+
+.about--container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 3rem;
+    margin-top: 2rem;
+}
+
+.about-left{
+   
+   border: var(--brand-color) 5px solid; 
+
+}
+
+
+.about-right h2{
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+}
+
+
+/* ============Services & Solutions=============== */
+
+.services-head{
+    text-align: center;
+}
+
+.services-head h6{
+    color: var(--brand-color);
+    font-size: 1.2rem;
+}
+
+.services-head h1{
+    color: var(--primary-color);
+    
+}
+
+.services-head p{
+    margin-bottom: 3rem;
+}
+
+.container-services{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+    
+}
+
+.services-solution{
+    width: 21rem;
+    background: rgba(59, 71, 163, 0.2);
+    border: none;
+    
+   
+    
+}
+
+.services-solution:hover{
+    box-shadow: 0 0 5px rgba(225, 255, 255, 0.2);
+}
+
+
+
+.services-info{
+    text-align: center;
+}
+
+
+.services-info h4{
+    color: var(--color-bg-1);
+    margin: 1.2rem 0;
+    font-size: 1rem;
+    
+
+}
+
+.services-info p{
+    
+    padding: 0 0.8rem;
+    
+}
+
+/* =============Buisness Modal=============== */
+
+.buisness-head{
+    text-align: center;
+}
+
+.buisness-head h1{
+    color: var(--primary-color);
+}
+
+
+.business-modal img{
+    width: 5rem;
+    background-color: rgba(0, 0, 0, 0.2);
+    display: block;
+    border-radius: 50%;
+    padding: 1rem;
+    margin: 1.7rem auto;
+}
+
+.business-modal h4{
+    margin-top: 2rem;
+    font-size: 1rem;
+    color: var(--primary-color);
+    text-align: center;
+    
+}
+
+.buisness-box{
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 3rem;
+   
+}
+
+/* =========Our Partners============ */
+
+.swiper-slide img{
+    width: 5rem;
+}
+
+.partners-container h2{
+    color: var(--primary-color);
+}
+
+/* =======Call To Action============ */
+
+.call-to-action{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.9),rgba(0, 0, 0, 0.2)), url(../images/LTC\ LOGO\ back.jpg);
+    height: 80vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.call-action-head{
+   text-align: center;
+
+}
+
+.call-action-head h3{
+    padding-top: 6rem;
+    font-size: 2.5rem;
+    color: var(--white-color);
+    width: 38.0625rem;
+    margin: auto;
+}
+
+.call-action-head p{
+    color: var(--white-color);
+    font-weight: 400;
+    width: 38.0625rem;
+    margin: auto;
+    padding: 1.8rem 0;
+}
+
+.btn-cta{
+    background: var(--primary-color);
+    padding: 0.8rem 3rem;
+    border: var(--white-color) 2px solid;
+}
+
+
+
+/* =============Partners Section========== */
+
+.partners-container{
+    overflow-x: hidden;
+}
+
+.partner-logo{
+    width: 10rem;
+    height: 10rem;
+    display: flex;
+    align-items: center; 
+}
+
+.partners-container{
+    text-align: center;
+}
+
+.partners-container h6{
+    color: var(--brand-color);
+}
+
+
+
+/* =============Testimonals Section========== */
+
+
+.testimonial-container{
+    overflow-x: hidden;
+    position: relative;
+    margin-bottom: 5rem;
+
+}
+
+.testimonial-container h2{
+    color: var(--primary-color);
+}
+
+.testimonials{
+    padding-top: 2rem;
+}
+
+.avatar{
+    width: 6rem;
+    height: 6rem;
+    border-radius: 50%;
+    margin: 0 auto 1rem;
+   
+}
+
+.testimonial-info{
+    text-align: center;
+}
+
+.testimonial-body{
+    background: var(--color-bg-1);
+    padding: 2rem;
+    margin-top: 3rem;
+    position: relative;
+}
+
+.testimonial-body::before{
+    content: '';
+    width: 3rem;
+    height: 3rem;
+    display: block;
+    background: linear-gradient( 135deg, transparent, 
+    var(--color-bg-1), 
+    var(--color-bg-1));
+    position: absolute;
+    left: 47%;
+    top: -1.5rem;
+    transform: rotate(45deg);
+}
+
+
+/* ==========Ltc News ============== */
+
+.blog-container h2{
+    color: var(--primary-color);
+}
+
+.blog-head p{
+    text-align: center;
+    color: var(--brand-color);
+    font-weight: 700;
+}
+
+.blog-post{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.blog-img img{
+    height: 12rem;
+}
+.blog-info{
+    text-align: center;
+    box-shadow: 0 8px 1rem rgba(82, 213, 214, 0.2);
+    cursor: pointer;
+}
+
+.blog-info h4{
+    color: var(--color-bg-1);
+    padding: 1.5rem 0  0.7rem;
+}
+
+.blog-info a{
+    text-decoration: underline;
+    color: var(--color-bg-1);
+    font-size: 0.9rem;
+}
+
+.blog-stars{
+    color: #ebc340;
+}
+
+.blog-info, small{
+    padding-bottom: 1.5rem;
+}
+
+/* =====================Faqs======================== */
+
+.faqs{
+    background: rgba(82, 213, 214, 0.2);
+     box-shadow: inset 0 0 3rem rgba(82, 213, 214, 0.5);
+}
+
+.container-faq{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+}
+
+.faq{
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    gap: 1.4rem;
+    height: fit-content;
+    background: var(--brand-color);
+    cursor: pointer;
+}
+
+.faqs h2{
+    color: var(--primary-color);
+}
+
+.faq h4{
+    font-size: 1rem;
+    line-height: 2.2rem;
+    color: var(--white-color);
+}
+
+.faq p{
+    margin-top: 0.8rem;
+    display: none;
+}
+
+.faq.open p{
+    display: block;
+    color: var(--white-color);
+}
+
+.faq-icon{
+    align-self: flex-start;
+    font-size: 1.2rem;
+    color: var(--white-color);
+}
+
+
+/* ===============Contact Info================ */
+
+.contact{
+    background: rgba(196, 215, 215, 0.302);
+    
+}
+
+.contact-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.2rem;
+    align-items: center;
+}
+
+.contact-left{
+    position: relative;
+}
+
+.contact-right{
+    margin-left: 2rem;
+}
+
+.contact-right h3{
+    color: var(--primary-color);
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.contact-right p{
+    margin-bottom: 2rem;
+}
+
+
+
+.contact-btn{
+    background: var(--primary-color);
+    padding: 1rem;
+    color: var(--white-color);
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    
+}
+
+.contact-left img{
+   margin-left: 1.5rem;
+   margin-top: 1.5rem;
+   box-shadow: 1px 1px 1rem 0 rgba(0, 0, 0, 0.9);
+}
+
+.contact-bg{
+    content: '';
+    width: 70%;
+    height: 80%;
+    display: block;
+    background-color: var(--primary-color);
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+
+
+
+
+/* ===========Footer section================ */
+footer{
+    background: rgba(196, 215, 215, 0.302);
+    background-size: cover;
+    background-position: center;
+    
+}
+
+.footer-divider{
+    content: '';
+    width: 100%;
+    height: 0.3rem;
+    background: var(--primary-color);
+
+}
+
+.footer-divider-1{
+    content: '';
+    width: 100%;
+    height: 0.1rem;
+    background: var(--primary-color);
+
+}
+
+.social-details{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.3rem;
+}
+
+.social-links i{
+    background: rgba(255, 255, 255, 0.2);
+    color: var(--primary-color);
+    font-weight: 600;
+    padding: 0.6rem;
+    border-radius: 8px;
+}
+
+.details-text p{
+    color: var(--primary-color);
+    font-weight: 500;
+}
+
+.footer-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-top: 3rem;
+    padding: 0 1.5rem;
+}
+
+.footer-logo img{
+    width: 5rem;
+    margin: auto;
+   
+}
+.footer-logo h4{
+    color: var(--primary-color);
+    text-align: center;
+}
+
+.footer-logo p{
+    color: var(--white-color);
+    text-align: center;
+    margin-top: 1rem;
+}
+
+.usful-links p{
+    margin-top: 2rem;
+    text-align: center;
+}
+.usful-links a{
+    color: var(--white-color);
+}
+.usful-links h4{
+    color: var(--primary-color);
+    text-align: center;
+}
+
+.support p{
+    margin-top: 2rem;
+    text-align: center;
+    
+   
+}
+
+.support a{
+    color: var(--white-color);
+   
+}
+.support h4{
+    color: var(--primary-color);
+    text-align: center;
+}
+
+.footer-contact h4{
+    color: var(--primary-color);
+    text-align: center;
+}
+
+.contact-content{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+}
+
+.office-add:hover{
+    box-shadow: 2px  2rem 1px rgba(82, 213, 214, 0.2);
+    cursor: pointer;
+}
+
+.office-add{
+  background-color: var(--white-color);
+  padding: 1rem; 
+  border-radius: 10px; 
+}
+
+.phone-num{
+    background-color: var(--primary-color);
+    padding: 1rem;
+    color: var(--white-color);
+    margin: 1.4rem 0;
+    border-radius: 10px;
+}
+
+
+.emails{
+    background-color: var(--white-color);
+    border-radius: 10px;
+    padding: 1rem;
+    margin-bottom: 2rem;
+}
+
+
+
+.copyright{
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: var(--white-color);
+}
+
+
+
+
+/* ==============About Us Page=================== */
+
+.about-container{
+    background: url(../images/team-work-ltc.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 45vh;
+    margin-top: 5rem;
+}
+
+.about-text{
+    margin-left: 1.4rem;
+}
+
+.about-text h2{
+    color: var(--white-color);
+    font-size: 2rem;
+}
+.about-text p{
+    color: var(--white-color);
+    font-size: 1rem;
+}
+
+/* =============About us section============== */
+
+.container-about{
+    display: grid;
+    grid-template-columns: repeat(2,  1fr);
+    gap: 4rem;
+    align-items: center;
+    padding: 1rem 2rem 2rem 0;
+    position: relative;
+}
+
+.about-image img{
+   margin-left: 3rem;
+   margin-top: 3rem;
+   width: 90%;
+    
+}
+
+.about-image::before{
+    content: '';
+    background-color: var(--brand-color);
+    width: 30%;
+    height: 100vh;
+    display: block;
+    position: absolute;
+    z-index: -1;
+   
+    
+}
+
+.about-content{
+    background-color: var(--brand-color);
+    padding: 1rem;
+    box-shadow: 1px 3px 6rem  rgba(255, 225, 255, 0.7);
+    
+}
+
+.about-content span{
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: var(--primary-color);
+}
+
+.about-content p{
+    background-color: var(--white-color);
+    padding: 1rem;
+}
+
+
+/* ===========vision-mission============== */
+
+.vision-mission{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+    padding: 0 3rem;
+}
+
+.mission{
+    background-color: var(--color-bg-1);
+    padding: 1.5rem;
+}
+
+.mission h3{
+    margin-bottom: 1rem;
+    color: var(--white-color);
+}
+
+.vision{
+    background-color: var(--brand-color);
+    padding: 1.5rem;
+}
+.vision h3{
+    margin-bottom: 1rem;
+    color: var(--white-color);
+}
+
+
+/* =============About Values============ */
+
+.values-head{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    background-color: rgba(225, 255, 255, 0.2);
+    padding: 1.5rem;
+}
+
+.value-icon{
+    font-size: 3rem;
+    color: var(--primary-color);
+}
+
+.value-cont h4{
+    color: var(--primary-color);
+    font-size: 1.3rem;
+    margin-bottom: 0.5rem;
+
+}
+
+.choose-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.4rem;
+}
+
+/* =============Archivement=============== */
+.archivment{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    margin: 3rem auto;
+    padding-left: 2rem;
+   
+}
+
+.archivment-box{
+    border-right: var(--brand-color) 1px solid;
+}
+.archivment-icon{
+    display: flex;
+    align-items: center;
+    gap: 1.3rem;
+    margin-bottom: 1rem;
+}
+
+.archivment-icon i{
+    font-size: 2.5rem;
+    color: var(--primary-color);
+}
+.archivment-icon h5{
+    font-size: 1.3rem;
+    color: var(--primary-color);
+}
+
+.archivment-text{
+    font-size: 0.9rem;
+    
+}
+
+
+/* ===========Team=========== */
+
+.team{
+    background: var(--primary-color);
+    box-shadow: inset 0 0 3rem rgba(82, 213, 214, 0.3);
+   
+}
+
+.team-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+}
+
+.team-member{
+    background: var(--color-bg-1);
+    padding: 2rem;
+    border: 1px solid transparent;
+    transition: var(--transition);
+    position: relative;
+    overflow: hidden;
+}
+
+.team-member:hover{
+    background: transparent;
+    border-color: var(--color-bg-1);
+
+}
+
+.team-member-img img{
+    filter: saturate(0);
+}
+
+.team-member-img:hover img{
+    filter: saturate(1);
+}
+
+.team-member-info * {
+    text-align: center;
+    margin-top: 1.4rem;
+    color: var(--white-color);
+}
+
+.team-member-social {
+    position: absolute;
+    top: 50%;
+    right: -100%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    background: var(--color-bg-1);
+    border-radius: 1rem 0 0 1rem;
+    box-shadow: -2rem 0 2rem rgba(59, 71, 163, 0.2);
+    transition: var(--transition);
+    
+}
+.team-member-social a{
+    padding: 1rem;
+    color: var(--white-color);
+}
+
+.team-member:hover .team-member-social{
+    right: 0;
+}
+
+
+/* ==============Service Page=================== */
+
+.service-container{
+    background-image: url(../images/abt-banner.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 45vh;
+    margin-top: 5rem;
+}
+
+
+
+.service--text{
+    color: var(--white-color);
+    padding-top: 5rem;
+}
+
+.services-info-1{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem;
+    position: relative;
+}
+
+.services-info-2{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 4rem;
+    position: relative;
+}
+
+.service-img{
+    padding-left: 1rem;
+}
+.service-img-2{
+    padding-left: 1rem;
+}
+
+.box-1{
+    content: '';
+    width: 40%;
+    height: 80%;
+    background-color: transparent;
+    display: block;
+    position: absolute;
+    top: -5%;
+    left: 0;
+    border-top: 4px solid var(--primary-color);
+    border-left: 4px solid var(--primary-color);
+}
+
+.box-2{
+    content: '';
+    width: 40%;
+    height: 80%;
+    background-color: transparent;
+    display: block;
+    position: absolute;
+    bottom: -5%;
+    left: 8%;
+    border-bottom: 4px solid var(--primary-color);
+    border-right: 4px solid var(--primary-color);
+}
+
+.box--1{
+    content: '';
+    width: 40%;
+    height: 80%;
+    background-color: transparent;
+    display: block;
+    position: absolute;
+    top: -5%;
+    left: 53%;
+    border-top: 4px solid var(--primary-color);
+    border-left: 4px solid var(--primary-color);
+}
+.box--2{
+    content: '';
+    width: 40%;
+    height: 80%;
+    background-color: transparent;
+    display: block;
+    position: absolute;
+    bottom: -5%;
+    right: -2%;
+    border-bottom: 4px solid var(--primary-color);
+    border-right: 4px solid var(--primary-color);
+}
+
+
+
+.service-txt h3{
+    color: var(--primary-color);
+    font-size: 1.6rem;
+    margin-top: 6rem;
+
+}
+
+.what-we-do{
+    background-image: url(../images/blue-bg.jpg);
+    height: 70vh;
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 14rem;
+    position: relative;
+}
+
+.offer-text h1{
+    padding-top: 1rem;
+    padding-left: 3rem;
+    color: var(--white-color);
+   
+    
+
+}
+
+.offer{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.5rem;
+    padding: 0 3rem;
+    position: absolute;
+    top: 30%;
+}
+
+.offer-cont{
+    background: var(--white-color);
+    padding: 1.3rem;
+    box-shadow: 0 0 1rem 0 rgba(82, 213, 214, 0.3);
+    border-radius: 10px;
+}
+
+.offer-cont h4{
+    padding: 1rem 0;
+    font-size: 2rem;
+    text-transform: uppercase;
+    color: var(--primary-color);
+}
+
+
+/* ==========Ltc Africa News============== */
+
+.news-container{
+    background-image: url(../images/we-reduse.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 45vh;
+    margin-top: 5rem;
+}
+
+.news--text{
+    padding-top: 5rem;
+    text-align: center;
+}
+
+.news--text h2{
+    font-size: 2.2rem;
+}
+
+.news-head{
+    text-align: center;
+    position: relative;
+}
+
+.new-divider{
+    content: '';
+    width: 10rem;
+    height: 0.3rem;
+    background-color: var(--primary-color);
+    margin: auto;
+    
+}
+
+.news-head h3{
+    font-size: 2.5rem;
+}
+
+
+.news--container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+}
+
+.news-items{
+    margin-top: 3rem;
+}
+
+.news-items h3{
+    color: var(--primary-color);
+    font-size: 1.5rem;
+}
+
+.subscribe{
+    background-image: url(../images/blue-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 50vh;
+    margin-bottom: 12rem;
+}
+
+.subscribe-heading{
+    text-align: center;
+    background-color: var(--white-color);
+    padding: 5rem 6rem;
+    margin: 0 18rem;
+    box-shadow: 0 1px 1rem 0 rgba(82, 213, 214, 0.2);
+   
+}
+
+.subscribe-heading img{
+    width: 5rem;
+    margin: auto;
+}
+
+.subscribe-heading h4{
+    margin: 1rem 0;
+}
+
+.subscribe-info form input{
+    text-align: center;
+    border: var(--color-bg-1) 1px solid;
+    padding: 0.6rem;
+    border-radius: 5px;
+}
+
+.btn-wait{
+    padding: 0.6rem 1rem;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    border-radius: 5px;
+}
+
+
+/* ==============Contact Ltc-Africa============= */
+
+.contact--container{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)), url(../images/contact-2.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 150vh;
+    margin-top: 5rem;
+   
+
+
+}
+
+.contact--text h2{
+    color: var(--white-color);
+    font-size: 2rem;
+    text-align: center;
+   
+}
+.contact--text p{
+    color: var(--white-color);
+    font-size: 1.5rem;
+    text-align: center;
+  
+}
+
+.contact--text{
+    padding-top: 6rem;
+}
+
+.input-row{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+    
+}
+
+.input-row .input-group{
+    flex-basis: 45%;
+}
+
+input{
+    width: 100%;
+    border: none;
+    border-bottom: var(--white-color) 1px solid;
+    outline: none;
+    padding-bottom: 5px;
+    background: none;
+   
+}
+
+.input-group label{
+    color: var(--white-color);
+    font-size: 1.5rem;
+}
+
+.input-group input{
+    color: var(--white-color);
+}
+
+textarea{
+    width: 100%; 
+    border: var(--white-color) 1px solid;
+    outline: none;
+    padding: 10px;
+    box-sizing: border-box;
+    background: none; 
+    
+}
+ label{
+    color: var(--white-color);
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    display: block;
+   
+ }
+
+ .submit{
+    background: var(--primary-color);
+    color: var(--white-color);
+    padding: 1rem 1.5rem;
+    border: none;
+    outline: none;
+    margin-top: 1.2rem;
+    border-radius: 10px;
+ }
+
+ .contact---container{
+    background-image: url(../images/blue-bg.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 50vh;
+    margin-bottom: 12rem;
+ }
+
+ .contact---container h2{
+    padding-top: 1.2rem;
+    color: var(--white-color);
+ }
+
+ .office-boxes{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin: 0 4rem;
+ }
+
+ .contact--details{
+    background-color: var(--white-color);
+    padding: 2rem;
+    box-shadow: 0 1px 1rem 0 rgba(82, 213, 214, 0.2);
+    
+ }
+
+ .contact--details h4{
+    margin-top: 1.4rem;
+ }
+
+ .contact--details img{
+    width: 8rem;
+ }
+
+ .contact--details h6 {
+   font-size: 0.7rem;
+   color: var(--primary-color);
+ }
+
+ 
